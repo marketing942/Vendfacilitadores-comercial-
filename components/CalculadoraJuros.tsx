@@ -5,29 +5,29 @@ import { useLocalStorage } from "@/hooks/useLocalStorage";
 
 // Pagar.me MDR rates for D+2 anticipation per installment count
 const D02_RATES: Record<number, number> = {
-  1: 3.65,
-  2: 5.32,
-  3: 6.33,
-  4: 7.35,
-  5: 8.36,
-  6: 9.37,
-  7: 10.67,
-  8: 11.68,
-  9: 12.69,
-  10: 13.70,
-  11: 14.70,
-  12: 15.71,
-  13: 16.72,
-  14: 17.73,
-  15: 18.74,
-  16: 19.74,
-  17: 20.75,
-  18: 21.76,
+  1: 3.53,
+  2: 5.46,
+  3: 6.59,
+  4: 7.72,
+  5: 8.85,
+  6: 9.98,
+  7: 11.16,
+  8: 12.29,
+  9: 13.42,
+  10: 14.55,
+  11: 15.68,
+  12: 16.81,
+  13: 17.94,
+  14: 19.07,
+  15: 20.20,
+  16: 21.33,
+  17: 22.46,
+  18: 23.59,
 };
 
-const BOLETO_FIXED_COST = 3.49; // R$ fixed fee per boleto
-const PIX_RATE = 0.82; // % fee for Pix
-const GATEWAY_COST = 0.40; // R$ fixed gateway fee per transaction
+const BOLETO_FIXED_COST = 2.39; // R$ fixed fee per boleto
+const PIX_RATE = 0.85; // % fee for Pix
+const GATEWAY_COST = 0.30; // R$ fixed gateway fee per transaction
 
 const MIN_RATE_WARNING = 1.70;
 const MAX_RATE_SUGGESTION = 2.50;
@@ -295,7 +295,7 @@ export default function CalculadoraJuros() {
               <span className="text-green-700">{fmt(price)}</span>
             </h2>
             <p className="text-xs text-gray-500 mt-0.5">
-              Taxas Pagar.me (MDR D+2) · Gateway R$0,40 · Taxa de juros{" "}
+              Taxas Pagar.me (MDR D+2) · Gateway R$0,30 · Taxa de juros{" "}
               {rateInput.replace(".", ",")}% a.m.
             </p>
           </div>
@@ -458,17 +458,17 @@ export default function CalculadoraJuros() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <InfoCard
               label="Gateway (por transação)"
-              value="R$ 0,40"
+              value="R$ 0,30"
               sub="cobrado em toda venda"
             />
             <InfoCard
               label="Boleto bancário"
-              value="R$ 3,49"
+              value="R$ 2,39"
               sub="taxa fixa por emissão"
             />
             <InfoCard
               label="Pix"
-              value="0,82%"
+              value="0,85%"
               sub="sobre o valor da transação"
             />
 
