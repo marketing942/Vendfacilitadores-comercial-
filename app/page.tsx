@@ -15,45 +15,6 @@ const tools = [
     badge: "text-green-700 bg-green-50",
   },
   {
-    href: "/precificacao",
-    title: "Precificação de Serviço",
-    description: "Calcule o custo da operação, o preço por hora e visualize o DRE completo",
-    icon: (
-      <svg className="w-6 h-6 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-      </svg>
-    ),
-    iconBg: "bg-blue-100 group-hover:bg-blue-200",
-    border: "hover:border-blue-400",
-    badge: "text-blue-700 bg-blue-50",
-  },
-  {
-    href: "/precificacao-produtos",
-    title: "Precificação de Produtos",
-    description: "DRE por produto — Mentorias, Presencial, Online, Físicos e Supletivo",
-    icon: (
-      <svg className="w-6 h-6 text-rose-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-      </svg>
-    ),
-    iconBg: "bg-rose-100 group-hover:bg-rose-200",
-    border: "hover:border-rose-400",
-    badge: "text-rose-700 bg-rose-50",
-  },
-  {
-    href: "/precificacao-saas",
-    title: "Precificação de SaaS",
-    description: "Descubra o preço mensal ideal com base em Churn, CAC, Margem e LTV/CAC alvo",
-    icon: (
-      <svg className="w-6 h-6 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-      </svg>
-    ),
-    iconBg: "bg-purple-100 group-hover:bg-purple-200",
-    border: "hover:border-purple-400",
-    badge: "text-purple-700 bg-purple-50",
-  },
-  {
     href: "/calculadora-ton",
     title: "Calculadora Maquineta TON",
     description: "Simule taxas da TON por plano (Super, Turbo, Max) em Pix, débito e crédito parcelado",
